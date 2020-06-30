@@ -1,0 +1,12 @@
+<mat-card>
+    <mat-card-title class="title-menu">Alterar Email</mat-card-title>
+    <form>
+        <mat-form-field class="lady">
+            <input type="email" matInput #input minlength="10" placeholder="Digite seu email" 
+                [(ngModel)]="emails.email" name="email"pattern="[a-z0-9._%+-]{7,20}@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            <mat-error *ngIf="email.invalid" > {{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="updateEmail()" color="primary">Salvar</button>
+    <button mat-raised-button (click)="cancel()" >Cancelar</button>
+</mat-card>

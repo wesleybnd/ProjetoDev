@@ -1,0 +1,21 @@
+.header{
+    display: flex;
+    height: 60px;
+    background-color:#0f059e;
+    color: white;
+}
+
+.title{
+    text-decoration: none;
+    margin-top:5px;
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 17px;
+    color: cornsilk;
+}
+
+.logo{
+    width: 37px;
+    height: 37px;
+    margin-left: 20px;
+}
